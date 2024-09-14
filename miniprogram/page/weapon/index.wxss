@@ -1,0 +1,14 @@
+page {
+  --sidebar-width: 90px;
+}
+
+.weapon-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.side-container {
+  flex: 1;
+  background-color: red;
+}

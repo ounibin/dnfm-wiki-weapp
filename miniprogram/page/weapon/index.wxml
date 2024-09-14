@@ -1,0 +1,22 @@
+<view class="weapon-box">
+  <van-sidebar activeKey="{{activeKey}}" bind:change="onSidebarChange">
+    <van-sidebar-item title="鬼剑士" />
+    <van-sidebar-item title="格斗家" />
+    <van-sidebar-item title="神枪手" />
+    <van-sidebar-item title="魔法师" />
+    <van-sidebar-item title="圣职者" />
+  </van-sidebar>
+  <view class="side-container">
+    <van-collapse value="{{activeCollapse}}" bind:change="onCollapseChange">
+      <van-collapse-item title="标题1" name="1" >
+        代码是写出来给人看的，附带能在机器上运行
+      </van-collapse-item>
+      <van-collapse-item title="标题2" name="2">
+        代码是写出来给人看的，附带能在机器上运行
+      </van-collapse-item>
+      <van-collapse-item title="标题3" name="3">
+        代码是写出来给人看的，附带能在机器上运行
+      </van-collapse-item>
+    </van-collapse>
+</view>
+</view>
