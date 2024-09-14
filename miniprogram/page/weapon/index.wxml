@@ -1,22 +1,27 @@
 <view class="weapon-box">
-  <van-sidebar activeKey="{{activeKey}}" bind:change="onSidebarChange">
-    <van-sidebar-item title="鬼剑士" />
-    <van-sidebar-item title="格斗家" />
-    <van-sidebar-item title="神枪手" />
-    <van-sidebar-item title="魔法师" />
-    <van-sidebar-item title="圣职者" />
+  <van-sidebar bind:change="onSidebarChange">
+    <van-sidebar-item wx:for="{{roleList}}" wx:key="id" title="{{item.label}}" name="{{item.id}}" />
   </van-sidebar>
   <view class="side-container">
-    <van-collapse value="{{activeCollapse}}" bind:change="onCollapseChange">
-      <van-collapse-item title="标题1" name="1" >
-        代码是写出来给人看的，附带能在机器上运行
-      </van-collapse-item>
-      <van-collapse-item title="标题2" name="2">
-        代码是写出来给人看的，附带能在机器上运行
-      </van-collapse-item>
-      <van-collapse-item title="标题3" name="3">
-        代码是写出来给人看的，附带能在机器上运行
+    <van-collapse value="{{activeCollapseList}}" bind:change="onCollapseChange">
+      <van-collapse-item wx:for="{{rightPanelData}}" wx:key="id" title="{{item.label}}" name="{{item.id}}">
+        <view class="collapse-box">
+          <view class="weapon-item" wx:for="{{item.children}}" wx:key="label" bind:tap="onClickWeaponItem">
+            <image class="weapon-icon" src="{{item.icon}}" mode="aspectFit" />
+            <view class="weapon-info">
+              <view>{{item.level}}</view>
+              <view>{{item.label}}</view>
+
+            </view>
+
+            <view class="weapon-type">{{item.type}}</view>
+          </view>
+        </view>
       </van-collapse-item>
     </van-collapse>
-</view>
+  </view>
+
+  <van-overlay show="{{ showWeaponDetail }}" bind:click="onClickHideWeaponDetail">
+    <weapon-detail />
+  </van-overlay>
 </view>

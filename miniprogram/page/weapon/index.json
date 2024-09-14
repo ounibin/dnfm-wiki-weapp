@@ -1,4 +1,5 @@
 {
   "usingComponents": {
+    "weapon-detail": "../../components/weapon-detail/index"
   }
 }

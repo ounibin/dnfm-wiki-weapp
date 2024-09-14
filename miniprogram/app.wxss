@@ -6,6 +6,10 @@ page {
   --sidebar-selected-border-color: #07c160;
 }
 
+/* my-theme */
+page {
+  --ss-color: #07c160;
+}
 
 /* reset */
 page {

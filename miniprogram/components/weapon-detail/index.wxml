@@ -1,0 +1,23 @@
+<view class="weapon-detail">
+  <view class="weapon-detail-box">
+    <view class="weapon-detail-head">
+      <text>沧海巨剑</text>
+    </view>
+    <view class="weapon-detail-body">
+      <view>
+        <view>基本信息</view>
+        <view>攻击速度</view>
+        <view>物理攻击力</view>
+        <view>魔法攻击力</view>
+        <view>力量</view>
+        <view>智力</view>
+        <view>释放速度</view>
+        <view>命中率</view>
+        <view>物理暴击率</view>
+        <view>命中</view>
+      </view>
+      <view>效果</view>
+      <view></view>
+    </view>
+  </view>
+</view>

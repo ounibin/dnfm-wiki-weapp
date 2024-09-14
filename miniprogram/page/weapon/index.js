@@ -1,38 +1,64 @@
-// page/weapon/index.js
-Page({
+import roleList from '../../data/roles.js'
+import weaponList from '../../data/weapons.js'
 
+const defaultSelectRoleId = 'guijianshi'
+const defaultRightPanelData = weaponList[defaultSelectRoleId]
+const defaultActiveCollapseList = defaultRightPanelData.map((item)=>item.id)
+console.log(defaultRightPanelData)
+console.log(defaultActiveCollapseList)
+
+Page({
   /**
    * 页面的初始数据
    */
   data: {
-    activeKey: 0,
-    active: 0,
-    items: [{ text: '分组 1' }, { text: '分组 2' }],
-    activeCollapse: ['1'],
+    roleList: roleList,
+    selectId: defaultSelectRoleId,
+    rightPanelData: defaultRightPanelData,
+    activeCollapseList: defaultActiveCollapseList,
+    showWeaponDetail: true
   },
 
   onSidebarChange (e) {
     const i = e.detail
-    console.log(`ny----onSidebarChange: `, i)
+    const selectId = roleList[i].id
+    const weapons = weaponList[selectId]
+    console.log(selectId, '该职业的所有weapons', JSON.stringify(weapons))
+    const allWeaponIdList = weapons.map((item)=>item.id)
     this.setData({
-      activeKey: i
+      selectId,
+      rightPanelData: weapons,
+      activeCollapseList: allWeaponIdList
     })
   },
   onCollapseChange (e) {
     const val = e.detail
-    console.log(`ny----onCollapseChange: `, val)
+    console.log(`折叠某类武器: `, val)
     this.setData({
-      activeCollapse: val
+      activeCollapseList: val
     })
-    const arr = [0,1]
-    arr.some((item) => item===1)
+  },
+
+  onClickWeaponItem  (e) {
+    
+    this.setData({
+      showWeaponDetail: true
+    })
+  },
+
+
+  onClickHideWeaponDetail () {
+    
+    this.setData({
+      showWeaponDetail: false
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    
   },
 
   /**

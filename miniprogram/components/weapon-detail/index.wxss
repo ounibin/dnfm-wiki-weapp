@@ -1,0 +1,29 @@
+
+.weapon-detail {
+  height: 100%;
+  position: relative;
+}
+
+.weapon-detail-box {
+  background-color: #fff;
+  width: 300px;
+  height: 480px;
+  padding: 4px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.weapon-detail-head {
+  background-color: red;
+  height: 50px;
+
+}
+
+.weapon-detail-body {
+  background-color: blue;
+  height: 430px;
+  overflow: auto;
+}
