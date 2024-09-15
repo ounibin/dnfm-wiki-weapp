@@ -10,7 +10,7 @@
             <image class="weapon-icon" src="{{item.icon}}" mode="aspectFit" />
             <view class="weapon-info">
               <view>{{item.level}}</view>
-              <view>{{item.label}}</view>
+              <view>{{item.name}}</view>
 
             </view>
 
