@@ -16,14 +16,14 @@ Page({
     selectId: defaultSelectRoleId,
     rightPanelData: defaultRightPanelData,
     activeCollapseList: defaultActiveCollapseList,
-    showWeaponDetail: true
+    showWeaponDetail: false
   },
 
   onSidebarChange (e) {
     const i = e.detail
     const selectId = roleList[i].id
     const weapons = weaponList[selectId]
-    console.log(selectId, '该职业的所有weapons', JSON.stringify(weapons))
+    // console.log(selectId, '该职业的所有weapons', JSON.stringify(weapons))
     const allWeaponIdList = weapons.map((item)=>item.id)
     this.setData({
       selectId,
