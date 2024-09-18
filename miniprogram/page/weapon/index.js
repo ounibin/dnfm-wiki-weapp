@@ -16,7 +16,8 @@ Page({
     selectId: defaultSelectRoleId,
     rightPanelData: defaultRightPanelData,
     activeCollapseList: defaultActiveCollapseList,
-    showWeaponDetail: false
+    showWeaponDetail: false,
+    weaponDetail: {}
   },
 
   onSidebarChange (e) {
@@ -40,6 +41,7 @@ Page({
   },
 
   onClickWeaponItem  (e) {
+    console.log(`ny----e: `, e)
     
     this.setData({
       showWeaponDetail: true

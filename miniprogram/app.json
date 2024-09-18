@@ -39,16 +39,16 @@
   "debug": false,
   "permission": {
     "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      "desc": "你的位置信息将用于推荐附近玩家"
     }
   },
   "cloud": true,
   "sitemapLocation": "sitemap.json",
-  "themeLocation": "demo.theme.json",
-  "darkmode": true,
+  "themeLocation": "app.theme.json",
+  "darkmode": false,
   "resizable": true,
   "useExtendedLib": {
-    "weui": true
+    "weui": false
   },
   "usingComponents": {
     "van-overlay": "@vant/weapp/overlay/index",

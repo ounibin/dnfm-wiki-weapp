@@ -18,7 +18,8 @@ page {
 }
 
 .weapon-item {
-  background: rgba(0, 0, 0, .7);
+  background: var(--bgc);
+  color: var(--orange);
   width: 100%;
   height: 50px;
   margin-bottom: 8px;
@@ -37,6 +38,10 @@ page {
 .weapon-info {
   flex: 1;
   height: 40px;
+}
+
+.weapon-level {
+  color: var(--green);
 }
 
 .weapon-type {
