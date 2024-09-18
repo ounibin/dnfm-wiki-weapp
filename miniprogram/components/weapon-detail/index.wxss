@@ -7,7 +7,7 @@
 .weapon-detail-box {
   background-color: #fff;
   width: 300px;
-  height: 480px;
+  /* height: 900rpx; */
   padding: 4px;
   border-radius: 4px;
   position: absolute;
@@ -19,11 +19,13 @@
 .weapon-detail-head {
   /* background-color: red; */
   height: 50px;
+  border-bottom: 1px solid var(--light_grey);
 
 }
 
 .weapon-detail-body {
   /* background-color: blue; */
-  height: 430px;
+  /* height: 430px; */
   overflow: auto;
+  font-size: 14px;
 }

@@ -15,11 +15,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-
-  },
-
-  created () {
-    console.log('detail', this.data.detail)
   },
 
   /**

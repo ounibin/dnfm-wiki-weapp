@@ -14,6 +14,7 @@ page {
   --bgc: #150E07;
   --black: #150E07;
   --main_txt: #A78F72;
+  --light_grey: #ebedf0;
 }
 
 /* reset */

@@ -3,7 +3,7 @@
     <view class="weapon-detail-head">
       <text>{{detail.name}}</text>
     </view>
-    <view class="weapon-detail-body">
+        <view class="weapon-detail-body">
       <view>
         <view>基本信息</view>
         <view>攻击速度: {{detail.attack_speed}}</view>
@@ -15,8 +15,11 @@
         <view>魔法暴击率 {{detail.mofabaoji_rate}}</view>
         <view>命中 {{detail.attack_speed}}</view>
       </view>
-      <view>效果</view>
-      <view>{{detail.affect}}</view>
+      
+      <view>
+        <view>效果</view>
+        <text>{{detail.effect}}</text>
+      </view>
     </view>
   </view>
 </view>
