@@ -17,13 +17,13 @@
 }
 
 .weapon-detail-head {
-  background-color: red;
+  /* background-color: red; */
   height: 50px;
 
 }
 
 .weapon-detail-body {
-  background-color: blue;
+  /* background-color: blue; */
   height: 430px;
   overflow: auto;
 }

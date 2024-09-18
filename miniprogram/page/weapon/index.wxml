@@ -6,7 +6,7 @@
     <van-collapse value="{{activeCollapseList}}" bind:change="onCollapseChange">
       <van-collapse-item wx:for="{{rightPanelData}}" wx:key="id" title="{{item.label}}" name="{{item.id}}">
         <view class="collapse-box">
-          <view class="weapon-item" wx:for="{{item.children}}" wx:key="label" wx:for-item="weaponItem" bind:tap="onClickWeaponItem">
+          <view class="weapon-item" wx:for="{{item.children}}" wx:key="label" wx:for-item="weaponItem" data-detail="{{weaponItem}}" bind:tap="onClickWeaponItem">
             <image class="weapon-icon" src="{{weaponItem.icon}}" mode="aspectFit" />
             <view class="weapon-info">
               <view class="weapon-level">{{weaponItem.level}}</view>
@@ -22,6 +22,6 @@
   </view>
 
   <van-overlay show="{{ showWeaponDetail }}" bind:click="onClickHideWeaponDetail">
-    <weapon-detail data="{{weaponDetail}}" />
+    <weapon-detail detail="{{weaponDetail}}" />
   </van-overlay>
 </view>

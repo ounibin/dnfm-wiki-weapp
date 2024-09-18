@@ -1,4 +1,5 @@
 import allWeaponData from './weapon/all-weapons-youxiwang.js'
+import duanjianData from './weapon/duanjian.js'
 
 // const allWeaponData = require('./weapon/all-weapons-youxiwang.js')
 
@@ -14,7 +15,7 @@ export default {
   guijianshi: [{
     id: 'duanjian',
     label: '短剑',
-    children: findAllWeaponByWeaponCategory('短剑')
+    children: duanjianData
   },{
     id: 'taidao',
     label: '太刀',

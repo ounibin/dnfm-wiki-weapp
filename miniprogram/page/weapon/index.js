@@ -41,9 +41,11 @@ Page({
   },
 
   onClickWeaponItem  (e) {
-    console.log(`ny----e: `, e)
+    const detail = e.currentTarget.dataset.detail
+    console.log(`ny----onClickWeaponItem: `, detail)
     
     this.setData({
+      weaponDetail: detail,
       showWeaponDetail: true
     })
   },

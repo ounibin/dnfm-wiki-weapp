@@ -1,7 +1,7 @@
 {
   "pages": [
     "page/weapon/index",
-    "page/component/index"
+    "page/armor/index"
   ],
   "window": {
     "navigationBarTextStyle": "@navigationBarTextStyle",
@@ -22,10 +22,10 @@
         "text": "武器"
       },
       {
-        "pagePath": "page/component/index",
+        "pagePath": "page/armor/index",
         "iconPath": "@iconPathComponent",
         "selectedIconPath": "@selectedIconPathComponent",
-        "text": "组件"
+        "text": "防具"
       }
     ]
   },

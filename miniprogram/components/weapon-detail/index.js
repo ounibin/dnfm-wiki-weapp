@@ -5,7 +5,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    data: {}
+    detail: {
+      type: Object,
+      value: {}
+    }
   },
 
   /**
@@ -13,6 +16,10 @@ Component({
    */
   data: {
 
+  },
+
+  created () {
+    console.log('detail', this.data.detail)
   },
 
   /**
