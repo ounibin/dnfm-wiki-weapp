@@ -1,11 +1,13 @@
-// page/armor/index.js
+import armorTypes from '../../data/armor-types.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    leftList: armorTypes,
+    rightList: []
   },
 
   /**

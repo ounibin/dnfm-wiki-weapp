@@ -1,6 +1,3 @@
-page {
-  --sidebar-width: 90px;
-}
 
 .weapon-box {
   width: 100%;

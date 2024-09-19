@@ -13,18 +13,18 @@
     "color": "@tabBarColor",
     "selectedColor": "@tabBarSelectedColor",
     "borderStyle": "@tabBarBorderStyle",
-    "backgroundColor": "@tabBarBackgroundColor",
+    "backgroundColor": "",
     "list": [
       {
         "pagePath": "page/weapon/index",
-        "iconPath": "@iconPathComponent",
-        "selectedIconPath": "@selectedIconPathComponent",
+        "iconPath": "img/icon-weapon.png",
+        "selectedIconPath": "img/icon-weapon-active.png",
         "text": "武器"
       },
       {
         "pagePath": "page/armor/index",
-        "iconPath": "@iconPathComponent",
-        "selectedIconPath": "@selectedIconPathComponent",
+        "iconPath": "img/icon-armor.png",
+        "selectedIconPath": "img/icon-armor-active.png",
         "text": "防具"
       }
     ]
@@ -51,6 +51,7 @@
     "weui": false
   },
   "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
     "van-overlay": "@vant/weapp/overlay/index",
     "van-collapse-item": "@vant/weapp/collapse-item/index",
     "van-collapse": "@vant/weapp/collapse/index",

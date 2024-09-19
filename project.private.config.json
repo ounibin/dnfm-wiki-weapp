@@ -8,8 +8,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "page/weapon/index",
-          "pathName": "page/weapon/index",
+          "name": "防具页",
+          "pathName": "page/armor/index",
           "query": "",
           "launchMode": "default",
           "scene": null
