@@ -1,7 +1,9 @@
 {
   "pages": [
     "page/weapon/index",
-    "page/armor/index"
+    "page/armor/index",
+    "page/jewelry/index",
+    "page/card/index"
   ],
   "window": {
     "navigationBarTextStyle": "@navigationBarTextStyle",
@@ -26,6 +28,18 @@
         "iconPath": "img/icon-armor.png",
         "selectedIconPath": "img/icon-armor-active.png",
         "text": "防具"
+      },
+      {
+        "pagePath": "page/jewelry/index",
+        "iconPath": "img/icon-jewelry.png",
+        "selectedIconPath": "img/icon-jewelry-active.png",
+        "text": "首饰"
+      },
+      {
+        "pagePath": "page/card/index",
+        "iconPath": "img/icon-card.png",
+        "selectedIconPath": "img/icon-card-active.png",
+        "text": "卡片"
       }
     ]
   },
