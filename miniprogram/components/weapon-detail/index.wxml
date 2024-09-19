@@ -1,23 +1,28 @@
 <view class="weapon-detail">
   <view class="weapon-detail-box">
     <view class="weapon-detail-head">
-      <text>{{detail.name}}</text>
-    </view>
-        <view class="weapon-detail-body">
+      <image style="margin-right: 10px;" class="ml10" src="{{detail.icon}}" mode="aspectFit" lazy-load="{{true}}" fade-in />
       <view>
-        <view>基本信息</view>
+        <view>{{detail.name}}</view>
+        <view style="color: #91F51D;">{{detail.level}}级</view>
+      </view>
+
+    </view>
+    <view class="weapon-detail-body">
+      <view class="weapon-detail-body-title">基本信息</view>
+      <view style="padding-left: 10px;">
         <view>攻击速度: {{detail.attack_speed}}</view>
         <view>物理攻击力 {{detail.wuligongjili}}</view>
         <view>魔法攻击力 {{detail.mofagongjili}}</view>
-        <view>力量 {{detail.liliang}}</view>
+        <view wx:if="detail.liliang">力量 {{detail.liliang}}</view>
         <view>智力 {{detail.zhili}}</view>
         <view>释放速度 {{detail.shifang_speed}}</view>
         <view>魔法暴击率 {{detail.mofabaoji_rate}}</view>
         <view>命中 {{detail.attack_speed}}</view>
       </view>
-      
-      <view>
-        <view>效果</view>
+
+      <view class="weapon-detail-body-title">效果</view>
+      <view style="padding-left: 10px;">
         <text>{{detail.effect}}</text>
       </view>
     </view>

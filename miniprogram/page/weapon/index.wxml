@@ -8,13 +8,7 @@
         <view class="collapse-box">
           <view class="weapon-item" wx:for="{{item.children}}" wx:key="label" wx:for-item="weaponItem" data-detail="{{weaponItem}}" bind:tap="onClickWeaponItem">
             <image class="weapon-icon" src="{{weaponItem.icon}}" mode="aspectFit" />
-            <view class="weapon-info">
-              <view class="weapon-level">{{weaponItem.level}}</view>
-              <view>{{weaponItem.name}}</view>
-
-            </view>
-
-            <view class="weapon-type">{{weaponItem.type}}</view>
+            <view class="tc">{{weaponItem.name}}</view>
           </view>
         </view>
       </van-collapse-item>

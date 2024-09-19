@@ -6,9 +6,10 @@
 
 .weapon-detail-box {
   background-color: #fff;
+  color: var(--grey);
   width: 300px;
   /* height: 900rpx; */
-  padding: 4px;
+  padding: 10px;
   border-radius: 4px;
   position: absolute;
   left: 50%;
@@ -17,10 +18,15 @@
 }
 
 .weapon-detail-head {
-  /* background-color: red; */
   height: 50px;
-  border-bottom: 1px solid var(--light_grey);
+  border-bottom: 1px solid var(--light-grey);
+  display: flex;
+  color: var(--orange);
 
+}
+.weapon-detail-head > image {
+  width: 46px;
+  height: 46px;
 }
 
 .weapon-detail-body {
@@ -28,4 +34,9 @@
   /* height: 430px; */
   overflow: auto;
   font-size: 14px;
+}
+
+.weapon-detail-body-title {
+  color: #3cc51f;
+  padding: 10px 0 5px;
 }
