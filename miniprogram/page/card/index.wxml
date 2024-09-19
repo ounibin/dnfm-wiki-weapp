@@ -1,2 +1,18 @@
-<!--page/card/index.wxml-->
-<text>page/card/index.wxml</text>
+<view class="card-box">
+  <van-sidebar bind:change="onSidebarChange">
+    <van-sidebar-item wx:for="{{leftList}}" wx:key="id" title="{{item.label}}" name="{{item.id}}" />
+  </van-sidebar>
+  <view class="side-container">
+    <view class="collapse-box">
+      <view class="card-item" bind:tap="onClickWeaponItem">
+        <van-image width="80rpx" height="80rpx" src="{{'https://img1.ali213.net/glpic/upload/20200809/0712ED5E.jpg'}}"
+          fit="contain" />
+        <view class="card-item__name">装备名</view>
+      </view>
+    </view>
+  </view>
+
+  <van-overlay show="{{ showWeaponDetail }}" bind:click="onClickHideWeaponDetail">
+    <weapon-detail detail="{{weaponDetail}}" />
+  </van-overlay>
+</view>

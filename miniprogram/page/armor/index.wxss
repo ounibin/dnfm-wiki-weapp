@@ -1,4 +1,3 @@
-
 .armor-box {
   width: 100%;
   height: 100%;
@@ -11,8 +10,10 @@
 
 .collapse-box {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 创建 5 列等宽的布局 */
-  gap: 10rpx; /* 列之间的间距 */
+  grid-template-columns: repeat(5, 1fr);
+  /* 创建 5 列等宽的布局 */
+  gap: 10rpx;
+  /* 列之间的间距 */
   padding: 30rpx;
   background-color: blue;
 }
@@ -27,12 +28,10 @@
   align-items: center;
 }
 
-.armor-item__icon {
-}
+.armor-item__icon {}
 
 .armor-item__name {
   font-size: 24rpx;
   line-height: 1;
   text-align: center;
 }
-

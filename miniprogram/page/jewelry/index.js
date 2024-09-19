@@ -1,11 +1,13 @@
-// page/jewelry/index.js
+import jewelryTypes from '../../data/jewelry-types.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    leftList: jewelryTypes,
+    rightList: []
   },
 
   /**

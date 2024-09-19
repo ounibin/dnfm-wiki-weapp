@@ -1,1 +1,30 @@
-/* page/card/index.wxss */
+.card-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.side-container {
+  flex: 1;
+}
+
+.collapse-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10rpx;
+  padding: 30rpx;
+}
+
+.card-item {
+  color: var(--orange);
+  margin-bottom: 16rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-item__name {
+  font-size: 24rpx;
+  line-height: 1;
+  text-align: center;
+}

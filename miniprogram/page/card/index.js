@@ -1,10 +1,13 @@
-// page/card/index.js
+import cardTypes from '../../data/card-types.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    leftList: cardTypes,
+    rightList: []
 
   },
 
