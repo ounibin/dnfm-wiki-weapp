@@ -11,10 +11,10 @@
     <view class="weapon-detail-body">
       <view class="weapon-detail-body-title">基本信息</view>
       <view style="padding-left: 10px;">
-        <view>攻击速度: {{detail.attack_speed}}</view>
+        <view>攻击速度：{{detail.attack_speed}}</view>
         <view>物理攻击力 {{detail.wuligongjili}}</view>
         <view>魔法攻击力 {{detail.mofagongjili}}</view>
-        <view wx:if="detail.liliang">力量 {{detail.liliang}}</view>
+        <view wx:if="{{detail.liliang}}">力量 {{detail.liliang}}</view>
         <view>智力 {{detail.zhili}}</view>
         <view>释放速度 {{detail.shifang_speed}}</view>
         <view>魔法暴击率 {{detail.mofabaoji_rate}}</view>
